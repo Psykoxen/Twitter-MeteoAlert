@@ -61,7 +61,7 @@ while True:
                     message+=', '
             if len(dept_alerted) != 0 :
                     print (message)
-                    #api.update_status(message)
+                    api.update_status(message)
                     time.sleep(900)
         else :   
             for reason in meteo_reasons:
@@ -81,7 +81,7 @@ while True:
 
                 if len(dept_alerted) != 0 :
                     print (message)
-                    #api.update_status(message)
+                    api.update_status(message)
                     time.sleep(900)
 
     hst = open("hst.json", "r+")
